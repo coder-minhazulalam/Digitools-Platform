@@ -4,7 +4,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="flex px-[100px] sticky top-0 justify-between items-center  py-3 bg-white shadow-md z-50">
+    <div className="flex px-[100px] sticky  top-0 justify-between items-center  py-3 bg-white shadow-md z-50">
       <h1 className="text-[50px] font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
         DigiTools
       </h1>

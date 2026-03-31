@@ -30,7 +30,7 @@ const navItems = [
 
 const NavItems = () => {
     return (
-        <ul className='flex gap-8 text-lg font-medium'>
+        <ul className='hidden md:flex gap-8 text-lg font-medium'>
         {
             navItems.map(item => <a href={item.path} key={item.id} className='duration-300 text-black hover:bg-blue-200 hover:text-black p-3 rounded-2xl'>{item.name}</a>)    
         }

@@ -2,7 +2,9 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex py-10 gap-[200px] items-center px-50">
+    <>
+
+    <div className="flex flex-col md:flex-row py-10 gap-[200px] items-center px-50">
       <div className="flex flex-col gap-5 w-[600px] p-5 ">
         <div className="flex gap-2 bg-[#E1E7FF] text-[#333] rounded-2xl p-2 w-[300px]">
           <img src="/assets/Group 5.svg" alt="Group 5" />
@@ -41,10 +43,36 @@ const Banner = () => {
         <img
           src="/assets/banner.png"
           alt="hero"
-          className="w-[400px] h-[500px] mt-10"
+          className="w-[400px] h-[530px] mt-10 shadow-2xl rounded-3xl"
         />
       </div>
     </div>
+
+    {/* -------------  */}
+    <div className="p-5 mb-10 mt-10 flex  space-x-15 items-center bg-[#3b2fd6] justify-center py-10">
+      <div className="p-10  text-white text-center ">
+           <h1 className="text-[45px] font-bold">50K+</h1>  
+           <p className="text-gray-300 ">Active Users</p> 
+        </div>
+      <div className=" h-13 w-[1px] bg-gray-300"></div>
+        <div className="p-10 text-white text-center ">
+           <h1 className="text-[45px] font-bold">200+</h1>  
+           <p className="text-gray-300 ">Premium Tools</p> 
+        </div>
+      <div className=" h-13 w-[1px] bg-gray-300"></div>
+        <div className="p-10 text-white text-center">
+           <h1 className="text-[45px] font-bold">4.9</h1>  
+           <p className="text-gray-300 ">Rating</p> 
+        </div>
+
+    </div>
+
+
+    </>
+    
+
+
+
   );
 };
 
