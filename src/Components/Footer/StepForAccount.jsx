@@ -25,7 +25,6 @@ const StepForAccount = () => {
                 <h2 className='text-lg font-semibold'>Choose Products</h2>
                 <p className='text-sm text-gray-600 text-center'>Browse our catalog and select the tools<br></br> that fit your needs.</p>
             </div>
-
                         <div className='h-full relative flex flex-col items-center justify-center border border-solid border-amber-300 shadow-2xl
              rounded-2xl space-y-3 p-10'>
                <img src='/assets/rocket.png' alt='Step 1' className='w-20 h-20 p-4 mb-2 bg-gray-200 rounded-full'/>

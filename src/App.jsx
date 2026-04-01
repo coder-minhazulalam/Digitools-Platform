@@ -11,6 +11,7 @@ const productsPromise = fetch('Products.json').then(response => response.json())
 const App = () => {
   return (
     <>
+    
     {/*------ Navbar ------ */}
      <Navbar/>
      {/*------ Banner ------ */}
