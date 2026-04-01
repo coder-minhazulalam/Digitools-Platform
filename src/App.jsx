@@ -1,7 +1,10 @@
 import './App.css'
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Banner from './Components/BannerSection/Banner';
+import Card from './Components/CardItems/Card';
+
+const productsPromise = fetch('Products.json').then(response => response.json())
 
 const App = () => {
   return (
@@ -11,6 +14,10 @@ const App = () => {
      {/*------ Banner ------ */}
      {/* <Banner/> */}
      <Banner/>  
+     {/* Card */}
+    <Suspense>
+    <Card productsPromise={productsPromise} />
+  </Suspense>
     </>
   );
 };

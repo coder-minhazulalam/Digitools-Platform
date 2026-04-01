@@ -1,0 +1,81 @@
+{
+    "products": [
+  {
+    "id": 1,
+    "name": "DesignPro Studio",
+    "description": "A powerful design tool for creating social media graphics, posters, and branding assets.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["500+ templates", "Drag & drop editor", "Brand kit", "Export to PNG/PDF"],
+    "icon": "🎨"
+  },
+  {
+    "id": 2,
+    "name": "CodeFlow IDE",
+    "description": "Online coding platform with real-time collaboration and cloud-based development.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multi-language support", "Live collaboration", "Auto-save", "Cloud deployment"],
+    "icon": "💻"
+  },
+  {
+    "id": 3,
+    "name": "ResumeX Builder",
+    "description": "Create professional resumes with ATS-friendly templates in minutes.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Custom sections"],
+    "icon": "📄"
+  },
+  {
+    "id": 4,
+    "name": "MarketGenius",
+    "description": "All-in-one digital marketing tool for campaigns, analytics, and automation.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Email automation", "Campaign tracking", "SEO tools", "Analytics dashboard"],
+    "icon": "📈"
+  },
+  {
+    "id": 5,
+    "name": "CloudVault Storage",
+    "description": "Secure cloud storage solution for personal and business file management.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["1TB storage", "File sharing", "End-to-end encryption", "Auto backup"],
+    "icon": "☁️"
+  },
+  {
+    "id": 6,
+    "name": "TaskMaster Pro",
+    "description": "Boost productivity with task management, reminders, and team collaboration.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Task tracking", "Team collaboration", "Reminders", "Kanban boards"],
+    "icon": "✅"
+  },
+  {
+    "id": 7,
+    "name": "VideoCraft Editor",
+    "description": "Easy-to-use video editing software for creators and marketers.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["4K editing", "Transitions & effects", "Audio tools", "Export to multiple formats"],
+    "icon": "🎬"
+  }
+]
+}
