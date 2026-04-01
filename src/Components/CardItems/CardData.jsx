@@ -4,7 +4,7 @@ import AllCardInfo from './AllCardInfo';
 const CardData = ({productsData , cartItems, setCartItems}) => {
 
     return (
-        <div className='grid grid-cols-3 p-10 gap-3'>
+        <div className='grid grid-cols-1 md:grid-cols-3 p-10 gap-3'>
         {
             productsData.map((items) => <AllCardInfo key={items.id} items={items} cartItems={cartItems} setCartItems={setCartItems}></AllCardInfo>)
         }

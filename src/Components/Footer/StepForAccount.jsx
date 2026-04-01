@@ -10,7 +10,7 @@ const StepForAccount = () => {
         </p>
       </div>
 
-      <div className="h-[300px]  mt-15 mb-20 flex flex-row space-x-5 items-center justify-center mx-auto">
+      <div className="h-[300px] mt-100 md:mt-15 mb-20 space-y-10 md:space-y-0 flex flex-col md:flex-row space-x-5 items-center justify-center mx-auto">
         <div
           className="h-full relative flex flex-col items-center justify-center border border-solid border-amber-300 shadow-2xl
              rounded-2xl space-y-3 p-10"
@@ -68,14 +68,14 @@ const StepForAccount = () => {
 
       {/* ........................................... */}
 
-      <div className="mt-15 text-center">
+      <div className="mt-100 mb-100 md:mb-0 md:mt-15 text-center">
         <h1 className="text-[40px] font-bold">Simple, Transparent Pricing</h1>
         <p className="text-[16px] text-gray-400">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
 
-      <div className="h-[450px]  mt-15 mb-20 flex flex-row space-x-10 items-center justify-center mx-auto">
+      <div className="h-[450px] mt-150 md:mt-15 space-y-10 md:space-y-0 mb-20 flex flex-col md:flex-row space-x-10 items-center justify-center mx-auto">
         <div className="h-full w-[350px] relative flex flex-col items-start justify-center  shadow-2xl rounded-2xl space-y-5 px-15 py-8">
           <h1 className="text-[30px] font-bold">Starter</h1>
           <p>Perfect for getting started</p>
@@ -159,7 +159,7 @@ const StepForAccount = () => {
 
       {/* ............................................... */}
 
-      <div className="text-center flex flex-col items-center justify-center  bg-gradient-to-r from-[#4F39F6] to-[#9514FA] p-10">
+      <div className="text-center mt-150 md:mt-10 flex flex-col items-center justify-center  bg-gradient-to-r from-[#4F39F6] to-[#9514FA] p-10">
         <div className="mt-15 text-center">
           <h1 className="text-[40px] font-bold">
             Ready to Transform Your Workflow?

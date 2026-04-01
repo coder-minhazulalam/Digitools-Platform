@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <>
 
-    <div className="flex flex-col md:flex-row py-10 gap-[10px] items-center px-30">
+    <div className="flex flex-col justify-center  md:flex-row py-10 gap-[10px] md:items-center px-30">
       <div className="flex flex-col gap-2 w-[600px] p-5 ">
         <div className="flex gap-2 bg-[#E1E7FF] text-[#333] rounded-2xl px-2 w-[300px]">
           <img src="/assets/Group 5.svg" alt="Group 5" />
@@ -49,17 +49,17 @@ const Banner = () => {
     </div>
 
     {/* -------------  */}
-    <div className="p-5 mb-10 mt-10 flex  space-x-15 items-center bg-[#3b2fd6] justify-center py-10">
+    <div className="flex flex-col justify-center items-center mx-auto md:flex-row p-5 mb-10 mt-10  space-x-15 md:items-center bg-[#3b2fd6] md:justify-center py-10">
       <div className="p-10  text-white text-center ">
            <h1 className="text-[45px] font-bold">50K+</h1>  
            <p className="text-gray-300 ">Active Users</p> 
         </div>
-      <div className=" h-13 w-[1px] bg-gray-300"></div>
+      <div className="hidden md:block h-13 w-[1px] bg-gray-300"></div>
         <div className="p-10 text-white text-center ">
            <h1 className="text-[45px] font-bold">200+</h1>  
            <p className="text-gray-300 ">Premium Tools</p> 
         </div>
-      <div className=" h-13 w-[1px] bg-gray-300"></div>
+      <div className="hidden md:block h-13 w-[1px] bg-gray-300"></div>
         <div className="p-10 text-white text-center">
            <h1 className="text-[45px] font-bold">4.9</h1>  
            <p className="text-gray-300 ">Rating</p> 
