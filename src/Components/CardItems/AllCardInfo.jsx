@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
-const AllCardInfo = ({items, setCartItems}) => {
+const AllCardInfo = ({items,cartItems,setCartItems}) => {
     
-  // check Sate -> click / not click ...............
-    const [ clicked , setClicked ] = useState(false)
+     // Check if the item is already in the cart
+     const isActive = cartItems.some(cartItem => cartItem.id === items.id);
+  
 
     const handleAddToCart = () => {
+
+      if(isActive){
+        return;
+      }
+
         setCartItems(prev => [...prev, items])
 
         // Show toast notification for adding to cart........
@@ -16,6 +21,8 @@ const AllCardInfo = ({items, setCartItems}) => {
         });
     };
 
+
+ 
 
     return (
           <div className="p-10 h-full w-full   mx-auto  rounded-2xl shadow-xl  bg-white relative">
@@ -57,15 +64,13 @@ const AllCardInfo = ({items, setCartItems}) => {
       </ul>
 
       {/* Button */}
-      <button 
-        className="w-full py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-medium hover:opacity-90 transition"
-        onClick={() => {
-          handleAddToCart();
-          setClicked(true);
-        }}
-      >
-        { clicked ? "Added to Cart" : "Buy Now" }
-        <ToastContainer/>
+        <ToastContainer />
+
+      <button  onClick={() =>  handleAddToCart()} 
+
+        className="w-full py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-medium hover:opacity-90 transition"         disabled={isActive}>
+        { isActive ? "Added to Cart" : "Buy Now" }
+
       </button>
     </div>
     );

@@ -5,6 +5,8 @@ import SelectedCard from './SelectedCard';
 
 const Card = ({ productsPromise }) => {
 
+    
+
     // Toggle state | products - cart view
     const[available, setAvailable] = useState(true)
     
@@ -34,8 +36,8 @@ const Card = ({ productsPromise }) => {
            
         {
             available ? 
-            <CardData productsData={productsData} setCartItems={setCartItems}/> : 
-            <SelectedCard cartItems={cartItems}  />
+            <CardData productsData={productsData} cartItems={cartItems} setCartItems={setCartItems}/> : 
+            <SelectedCard cartItems={cartItems} setCartItems={setCartItems} />
             
         }
 
