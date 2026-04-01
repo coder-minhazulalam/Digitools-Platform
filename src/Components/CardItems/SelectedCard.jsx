@@ -48,9 +48,9 @@ const SelectedCard = ({ cartItems, setCartItems }) => {
 
             <button
               onClick={removeAll}
-              className="h-[50px] mx-10 mt-5 rounded-3xl bg-gradient-to-r from-red-500 to-pink-500 text-white"
+              className="h-[50px] mx-10 mt-5 rounded-3xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white"
             >
-              Clear Cart
+              Proceed to Checkout
             </button>
           </div>
         </>

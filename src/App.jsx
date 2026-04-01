@@ -6,7 +6,7 @@ import Card from './Components/CardItems/Card';
 import { ToastContainer } from 'react-toastify';
 import StepForAccount from './Components/Footer/StepForAccount';
 
-const productsPromise = fetch('Products.json').then(response => response.json())
+const productsPromise = fetch('./Products.json').then(response => response.json())
 
 const App = () => {
   return (

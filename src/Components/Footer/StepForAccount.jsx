@@ -76,7 +76,6 @@ const StepForAccount = () => {
       </div>
 
       <div className="h-[450px]  mt-15 mb-20 flex flex-row space-x-10 items-center justify-center mx-auto">
-      
         <div className="h-full w-[350px] relative flex flex-col items-start justify-center  shadow-2xl rounded-2xl space-y-5 px-15 py-8">
           <h1 className="text-[30px] font-bold">Starter</h1>
           <p>Perfect for getting started</p>
@@ -124,12 +123,11 @@ const StepForAccount = () => {
             </li>
           </ul>
 
-<div className="flex items-center justify-center">
-              <button className="mt-5 px-6 py-4 mb-5 rounded-[25px]  bg-white text-[#4F39F6]  hover:bg-[#3a2ab8] transition duration-300">
-            Start Pro Trial
-          </button>
-</div>
-
+          <div className="flex items-center justify-center">
+            <button className="mt-5 px-6 py-4 mb-5 rounded-[25px]  bg-white text-[#4F39F6] ">
+              Start Pro Trial
+            </button>
+          </div>
         </div>
 
         <div className="h-full w-[350px] relative flex flex-col  shadow-2xl rounded-2xl space-y-5 px-15 py-8">
@@ -151,13 +149,127 @@ const StepForAccount = () => {
             </li>
           </ul>
 
-        <div className="flex items-center justify-center">
-        <button className="mt-5 px-6 py-4 mb-5 rounded-[25px] bg-[#4F39F6] text-white hover:bg-[#3a2ab8] transition duration-300">
-            Contact Sales
-        </button>
-        </div>
+          <div className="flex items-center justify-center">
+            <button className="mt-5 px-6 py-4 mb-5 rounded-[25px] bg-[#4F39F6] text-white ">
+              Contact Sales
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* ............................................... */}
+
+      <div className="text-center flex flex-col items-center justify-center  bg-gradient-to-r from-[#4F39F6] to-[#9514FA] p-10">
+        <div className="mt-15 text-center">
+          <h1 className="text-[40px] font-bold">
+            Ready to Transform Your Workflow?
+          </h1>
+          <p className="text-[16px] text-gray-400">
+            Join thousands of professionals who are already using Digitools to
+            work smarter.<br></br>Start your free trial today.
+          </p>
+        </div>
+
+        <div className="flex flex-row gap-3">
+          <button className="mt-5 px-6 py-2 mb-5 rounded-[25px]  bg-white text-[#4F39F6]  ">
+            Explore Products
+          </button>
+
+          <button className="mt-5 px-6 py-2 mb-5 text-white rounded-[25px] border border-solid border-white text-[#4F39F6]  ">
+            View Pricing
+          </button>
+        </div>
+
+        <p className="text-gray-400">
+          14-day free trial • No credit card required • Cancel anytime
+        </p>
+      </div>
+
+      {/* ----------  FOOTER --------------------- */}
+
+      <footer className="bg-[#0B1220] text-gray-400 px-10 py-16">
+        <div className="mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
+            <div className="col-span-2">
+              <h2 className="text-white text-2xl font-bold mb-4">DigiTools</h2>
+              <p className="text-sm leading-6">
+                Premium digital tools for creators,
+                <br />
+                professionals, and businesses. Work smarter
+                <br />
+                with our suite of powerful tools.
+              </p>
+            </div>
+
+            {/* Product */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Product</h3>
+              <ul className="space-y-2 text-sm">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Templates</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm">
+                <li>About</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Press</li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 text-sm">
+                <li>Documentation</li>
+                <li>Help Center</li>
+                <li>Community</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+
+            {/* Social */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Social Links</h3>
+              <div className="flex gap-3">
+                <div className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full cursor-pointer">
+                  <img src="/public/assets/Instagram.svg" alt="Instagram"></img>
+                </div>
+                <div className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full cursor-pointer">
+                  <img src="/public/assets/Facebook.svg" alt="Facebook"></img>
+                </div>
+                <div className="w-10 h-10 flex items-center justify-center bg-white text-black rounded-full cursor-pointer">
+                  <img src="/public/assets/fi_5968958.svg" alt="Twitter"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-gray-700 my-10"></div>
+
+          {/* Bottom Section */}
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>© 2026 Digitools. All rights reserved.</p>
+
+            <div className="flex gap-6 mt-4 md:mt-0">
+              <span className="cursor-pointer hover:text-white">
+                Privacy Policy
+              </span>
+              <span className="cursor-pointer hover:text-white">
+                Terms of Service
+              </span>
+              <span className="cursor-pointer hover:text-white">Cookies</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
