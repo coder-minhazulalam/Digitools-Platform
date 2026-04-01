@@ -17,7 +17,7 @@ const AllCardInfo = ({items,cartItems,setCartItems}) => {
         // Show toast notification for adding to cart........
         toast.success(`${items.name} added to cart!`, {
             position: "top-right",
-            autoClose: 3000,
+              autoClose: 3000,
         });
     };
 
@@ -64,7 +64,7 @@ const AllCardInfo = ({items,cartItems,setCartItems}) => {
       </ul>
 
       {/* Button */}
-        <ToastContainer />
+        <ToastContainer  autoClose={3000}/>
 
       <button  onClick={() =>  handleAddToCart()} 
 
